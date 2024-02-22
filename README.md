@@ -37,3 +37,11 @@ Nos enfrentamos a un desafío significativo que abordaremos con gran honor y ded
 - **Backend:** NodeJS o Django
 - **Base de Datos:** PostgreSQL o mongoDB
 - **Control de Versiones:** Git & GitHub
+
+## Enlaces del Proyecto
+
+- [Memoria del Proyecto](https://docs.google.com/document/d/1n4Jh_hIv1uAng6SlRXC6BerbHIUISJBDCvnP8AwmYBU/edit?usp=sharing)
+- [MOCKUP FIGMA](https://www.ejemplo.com)
+- [Enlace Adicional](https://www.ejemplo.com)
+
+  
