@@ -1,4 +1,4 @@
-# Proyecto Pagina GRICS UB
+# Pagina GRICS UB
 
 ## Descripción del Proyecto
 
