@@ -1,4 +1,4 @@
-# Proyecto-UB-GRICS
+# Pagina GRICS UB
 
 ## Imagen del KANBAN del SPRINT 1
 
