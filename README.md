@@ -35,13 +35,13 @@ Nos enfrentamos a un desafío significativo que abordaremos con gran honor y ded
 
 - **Frontend:** HTML , CSS , JavaScript & React 
 - **Backend:** NodeJS o Django
-- **Base de Datos:** PostgreSQL o mongoDB
+- **Base de Datos:** PostgreSQL o MongoDB
 - **Control de Versiones:** Git & GitHub
 
 ## Enlaces del Proyecto
 
 - [Memoria del Proyecto](https://docs.google.com/document/d/1n4Jh_hIv1uAng6SlRXC6BerbHIUISJBDCvnP8AwmYBU/edit?usp=sharing)
-- [MOCKUP FIGMA](https://www.ejemplo.com)
+- [MOCKUP FIGMA](https://www.figma.com/file/5Y03Cc6cR8XnbKYpAUBrAP/PROYECTO-UB?type=design&node-id=0%3A1&mode=design&t=DdLAEt3IpokKidxx-1)
 - [Enlace Adicional](https://www.ejemplo.com)
 
   
