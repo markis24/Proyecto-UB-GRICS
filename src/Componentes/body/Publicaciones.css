@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+div {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+div div a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+div div a:hover{
+    color: blue;
+}
+div h1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+    text-decoration-line: underline;
+}
