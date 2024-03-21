@@ -1,0 +1,46 @@
+/* FormStyles.css */
+
+.Form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .Form h3 {
+    text-align: center;
+  }
+  
+  .Form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .Form input[type="text"],
+  .Form input[type="email"],
+  .Form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  .Form input[type="submit"],
+  .Form input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .Form input[type="submit"]:hover,
+  .Form input[type="button"]:hover {
+    background-color: #0056b3;
+  }
+  
