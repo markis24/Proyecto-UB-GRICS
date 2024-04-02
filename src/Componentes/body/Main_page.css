@@ -1,0 +1,31 @@
+div{
+    margin: 0;
+    padding: 0;
+  }
+
+.columna-izquierda {
+    display: block;
+    float: left;
+    margin-left: 30px;
+    background-color: blueviolet;
+    width: 60%;
+}
+.columna-izquierda img{
+    width: 100%;
+}
+div div h2{
+    text-decoration: underline;
+}
+.columna-derecha {
+    float: right;
+    width: 30%;
+    margin-right: 30px;
+    background-color: aqua;
+}
+.columna-derecha img {
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+    width: 70%;
+    height: 70%;
+}
