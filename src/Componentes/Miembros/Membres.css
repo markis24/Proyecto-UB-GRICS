@@ -1,0 +1,58 @@
+.Membres {
+    text-align: center;
+    margin-bottom: 50px; /* Espacio adicional debajo del contenedor principal si es necesario */
+}
+
+.Membres h1 {
+    font-size: 100px;
+    margin: 20px 0 50px; /* Añade espacio debajo del título */
+}
+
+.imagenes-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px; /* Espacio adicional debajo del contenedor de imágenes */
+}
+
+.imagen-wrapper {
+    position: relative;
+    width: 300px; /* Ancho fijo para las imágenes */
+    height: 400px; /* Altura fija para las imágenes */
+    margin-bottom: 20px; /* Espacio adicional debajo de cada imagen */
+}
+
+.imagen-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-boton {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.info-boton:hover {
+    display: block;
+    background-color:#ee7c7c;
+    color: aliceblue;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .Membres h1 {
+        font-size: 60px; /* Reduce el tamaño del título en pantallas pequeñas */
+    }
+
+    .imagen-wrapper {
+        width: 90%; /* Ajusta las imágenes para que sean más flexibles en tamaño */
+        max-width: 300px; /* Establece un máximo para evitar que sean demasiado grandes */
+        height: auto; /* Hace que la altura sea automática para mantener la proporción */
+    }
+}
