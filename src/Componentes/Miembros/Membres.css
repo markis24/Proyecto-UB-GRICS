@@ -1,11 +1,8 @@
-.Membres {
-    text-align: center;
-    margin-bottom: 50px; /* Espacio adicional debajo del contenedor principal si es necesario */
-}
-
 .Membres h1 {
-    font-size: 100px;
+    font-size: 100px; /* Tamaño del título como estaba originalmente */
     margin: 20px 0 50px; /* Añade espacio debajo del título */
+    text-decoration: underline;
+    text-align: center;
 }
 
 .imagenes-container {
@@ -13,14 +10,13 @@
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    margin-bottom: 20px; /* Espacio adicional debajo del contenedor de imágenes */
 }
 
 .imagen-wrapper {
     position: relative;
-    width: 300px; /* Ancho fijo para las imágenes */
-    height: 400px; /* Altura fija para las imágenes */
-    margin-bottom: 20px; /* Espacio adicional debajo de cada imagen */
+    width: 300px;
+    height: 400px;
+    margin-bottom: 20px;
 }
 
 .imagen-wrapper img {
@@ -36,23 +32,79 @@
     transform: translate(-50%, -50%);
     padding: 10px 20px;
     cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
 
 .info-boton:hover {
-    display: block;
-    background-color:#ee7c7c;
-    color: aliceblue;
+    background-color: #0056b3;
 }
 
-/* Ajustes responsivos */
-@media (max-width: 768px) {
-    .Membres h1 {
-        font-size: 60px; /* Reduce el tamaño del título en pantallas pequeñas */
-    }
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
 
-    .imagen-wrapper {
-        width: 90%; /* Ajusta las imágenes para que sean más flexibles en tamaño */
-        max-width: 300px; /* Establece un máximo para evitar que sean demasiado grandes */
-        height: auto; /* Hace que la altura sea automática para mantener la proporción */
-    }
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.popup-image {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección a columna */
+    align-items: center; /* Alinea los elementos (imagen y botón) al centro */
+    justify-content: center; /* Centra los elementos verticalmente, útil si decides ajustar el espacio */
+}
+
+.popup-content img {
+    max-width: 350px;
+    margin-bottom: 20px; /* Asegura un espacio entre la imagen y el botón del CV */
+}
+
+.cv-boton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* El margin-top ya está definido, puede ajustarse si es necesario */
+}
+
+
+.cv-boton:hover {
+    background-color: #0056b3;
+}
+
+.close-boton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #ff4d4d; /* Color rojo para el botón */
+    color: white;
+    border: none;
+    border-radius: 100%;
+    transition: background-color 0.3s; /* Transición suave para el hover */
+}
+
+.close-boton:hover {
+    background-color: #cc0000; /* Un rojo más oscuro cuando se pasa el mouse por encima */
 }

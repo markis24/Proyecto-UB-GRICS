@@ -6,6 +6,7 @@
 .Projectes h1 {
     font-size: 100px;
     margin: 20px 0 50px; /* Añade espacio debajo del título */
+    text-decoration: underline;
 }
 
 .imagenes-container {
