@@ -7,11 +7,13 @@ import './App.css';
 
 function App() {
     return (
+
         <div className='container'>
+
             <Header />
             <Membres />
-            <Projectes/>
-            
+            <Projectes />
+
         </div>
     );
 }
