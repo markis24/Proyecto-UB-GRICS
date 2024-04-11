@@ -1,0 +1,54 @@
+/*
+.info-uni{
+    padding-left: 40px;
+    font-family: Arial, sans-serif;
+    
+}
+.info-uni h3{
+    padding-bottom: 20px;
+}
+.info-uni h1{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+*/
+
+/* Contacto.css */
+
+/* Estilos para el contenedor principal */
+.info-uni {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+  }
+  
+  /* Estilos para los encabezados */
+  .info-uni h1 {
+    font-size: 90px;
+    margin-bottom: 10px;
+    text-align: center;
+    
+  }
+  
+  .info-uni h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  /* Estilos para los párrafos */
+  .info-uni p {
+    margin: 5px 0;
+  }
+  
+  /* Estilos para la imagen */
+  .info-uni img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
