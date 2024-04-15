@@ -11,30 +11,39 @@ body {
 }
 
 nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #5755e0;
-    height: 50px;
+    height: 70px;
     width: 100%;
     position: fixed;
     z-index: 1000;
+    padding: 0 10px; /* Added padding for some spacing on the sides */
 }
 
-label.logo {
-    color: white;
-    font-size: 35px;
-    line-height: 50px;
-    padding: 0 100px;
-    font-weight: bold;
+nav .logo {
+    flex: 0 0 auto; /* Logo container can grow or shrink */
+}
+
+nav .logo img {
+    height: auto; 
+    width: 80vw; 
+    max-width: 90px; 
+    min-width: 20px; 
+    margin-left: 50px;
 }
 
 nav ul {
-    float: right;
-    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-right: 50px;
 }
 
 nav ul li {
-    display: inline-block;
-    line-height: 50px;
-    margin: 0 5px;
+    padding: 0 10px;
 }
 
 nav ul li a {
@@ -125,8 +134,15 @@ nav ul li button a:hover {
     }
 }
 
+
 section {
     background: url(bg1.jpg) no-repeat;
     background-size: cover;
     height: calc(100vh - 50px);
+}
+
+@media (max-width: 768px) {
+    nav .logo img {
+        width: 15vw; /* Increase the percentage for smaller screens if needed */
+    }
 }

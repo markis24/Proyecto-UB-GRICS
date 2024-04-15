@@ -9,6 +9,7 @@ function Membres() {
         { nombre: 'Miembro 3', cargo: 'Cargo 3', descripcion: 'Descripción 3', imagen: 'https://img.freepik.com/foto-gratis/hombre-moreno-positiva-brazos-cruzados_1187-5797.jpg' },
         { nombre: 'Miembro 4', cargo: 'Cargo 4', descripcion: 'Descripción 4', imagen: 'https://img.freepik.com/foto-gratis/hombre-moreno-positiva-brazos-cruzados_1187-5797.jpg' }
     ];
+
     const [miembroSeleccionado, setMiembroSeleccionado] = useState(miembros[0]);
 
     const mostrarPopup = (miembro) => {
