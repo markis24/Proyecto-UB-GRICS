@@ -47,4 +47,4 @@ La Universidad de Barcelona (UB) se ha asociado con el Instituto TIC de Barcelon
 
 - [Memoria del Proyecto](https://docs.google.com/document/d/1n4Jh_hIv1uAng6SlRXC6BerbHIUISJBDCvnP8AwmYBU/edit?usp=sharing)
 - [Mockup Figma](https://www.figma.com/file/5Y03Cc6cR8XnbKYpAUBrAP/PROYECTO-UB?type=design&node-id=0%3A1&mode=design&t=DdLAEt3IpokKidxx-1)
-- [CRUD-Laravel](https://github.com/markis24/Laravel_UF3.git)
+- [CRUD-LARAVEL](https://github.com/markis24/CRUD-LARAVEL.git)
