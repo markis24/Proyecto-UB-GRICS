@@ -1,0 +1,38 @@
+#mainPageId {
+    margin-top: 80px; 
+    text-align: center;
+    margin: 50px 10% 0 10%;
+    padding: 25px;
+}
+
+#mainPageId h1 {
+    margin-bottom: 20px; 
+    font-size: 7rem;
+    text-decoration: underline;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    text-align: left; 
+}
+
+.content .text {
+    width: 95%; 
+}
+
+.content img {
+    width: 75%; 
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; 
+    }
+
+    .content .text, .content img {
+        width: 80%;
+    }
+}

@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que padding y border no afecten las dimensiones declaradas */
+}
+
+.Publicaciones {
+    margin: 50px 5%; /* Uso de shorthand para margin para simplificar */
+    padding-top: 25px;
+}
+
+.Publicaciones div a {
+    display: block; /* Hace que cada enlace ocupe toda la fila, mejora la clicabilidad */
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 8px 0; /* Añade padding para aumentar el área clickeable */
+    transition: color 0.3s; /* Suaviza la transición de color */
+}
+
+.Publicaciones div a:hover {
+    color: blue;
+    text-decoration: underline; /* Añade subrayado al hover para mayor énfasis */
+}
+
+.Publicaciones h1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 7rem; /* Más responsivo que un tamaño fijo */
+    text-decoration-line: underline;
+    margin-bottom: 20px; /* Añade un margen inferior para separar del contenido siguiente */
+}
