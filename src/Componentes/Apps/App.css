@@ -3,3 +3,13 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
+.section {
+  height: 100vh; /* Establece la altura de cada sección igual a la altura del viewport */
+  padding: 40px 20px; /* Añade padding arriba y abajo, y un poco a los lados */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Esto centra el contenido verticalmente */
+  align-items: center; /* Esto centra el contenido horizontalmente */
+  box-sizing: border-box; /* Asegura que el padding no afecte la altura definida */
+}

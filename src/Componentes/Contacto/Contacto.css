@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #5755e0;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+}
+
+footer div {
+  flex: 1;
+}
+
+#entitats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#entitats .images {
+  display: flex;
+  justify-content: center;
+}
+
+#entitats img {
+  max-width: 200px;
+  /* Tamaño máximo un poco más grande */
+  height: auto;
+  margin-right: 10px;
+}
+
+.titols {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#entitats {
+  margin-right: 30%;
+}
+
+.space {
+  margin-bottom: 20px;
+  color: white;
+}

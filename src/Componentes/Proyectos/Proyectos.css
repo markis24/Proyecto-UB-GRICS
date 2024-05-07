@@ -1,9 +1,15 @@
 .Projectes {
+    min-height: 100vh; /* Asegura que la sección tenga al menos la altura del viewport */
     padding-top: 25px;
     margin-top: 50px; /* Aumenta el margen superior para asegurar que no esté detrás del header */
     text-align: center;
-    border: 2px solid rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente dentro del viewport */
+    align-items: center; /* Centra horizontalmente en caso necesario */
+    border: 2px solid rgb(153, 51, 88);
 }
+
 
 .Projectes h1 {
     font-size: 100px;

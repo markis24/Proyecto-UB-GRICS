@@ -43,6 +43,12 @@ nav .logo img {
     min-width: 20px;
 }
 
+.logo p {
+    font-size: 10px;
+    display: flex;
+    color: white;
+}
+
 nav ul {
     list-style: none;
     display: flex;

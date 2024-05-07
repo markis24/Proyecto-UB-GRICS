@@ -1,11 +1,18 @@
 #mainPageId {
-    margin-top: 80px; 
-    text-align: center;
-    margin: 50px 10% 0 10%;
+    margin: 5% 10% 1% 10%; 
     padding: 25px;
+    border: 5px solid green;
+    min-height: 100vh; /* Asegura que la sección tenga al menos la altura del viewport */    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente dentro del viewport */
+    align-items: center; /* Centra horizontalmente en caso necesario */
+    border: 2px solid rgb(37, 230, 153);
+
 }
 
 #mainPageId h1 {
+    text-align: center;
     margin-bottom: 20px; 
     font-size: 7rem;
     text-decoration: underline;

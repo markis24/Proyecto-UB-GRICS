@@ -1,3 +1,16 @@
+.Membres {
+    min-height: 50vh;
+    padding-top: 25px;
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(250, 141, 15);
+
+}
+
 .Membres h1 {
     font-size: 100px;
     margin: 75px 0 25px;
@@ -64,7 +77,8 @@
     position: relative;
     width: 90%;
     max-width: 600px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    font-size: 15px;
 }
 
 .popup-image {
@@ -89,6 +103,15 @@
 
 .cv-boton:hover {
     background-color: #0056b3;
+}
+
+.popup-text h2 {
+    color: #5755e0;
+    margin-bottom: 5px;
+}
+
+.popup-text h4 {
+    margin-bottom: 5px;
 }
 
 .close-boton {
