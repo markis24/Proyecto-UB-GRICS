@@ -1,0 +1,37 @@
+#qui-som{
+    text-align: center;
+    color: #C54189;
+    font-size: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+    margin-top: 0px;
+}
+
+#flexl-grics{
+    display: flex;
+    margin: 0 10% 0 10%;
+}
+
+#flexl-grics img{
+    margin-right: 5%;
+}
+#flexl-grics p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#flexr-grics{
+    display: flex;
+    margin: 0 10% 0 10%;
+}
+
+#flexr-grics img{
+    margin-left: 5%;
+}
+#flexr-grics p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}   
