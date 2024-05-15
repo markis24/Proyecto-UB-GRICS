@@ -12,7 +12,6 @@
     flex-direction: column;
     justify-content: center; /* Centra el contenido verticalmente dentro del viewport */
     align-items: center; /* Centra horizontalmente en caso necesario */
-    border: 2px solid red;
 
 }
 

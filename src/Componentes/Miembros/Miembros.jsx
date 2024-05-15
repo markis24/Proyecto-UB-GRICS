@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 import './Miembros.css';
 
-function Membres() {
-    const [showPopup, setShowPopup] = useState(false);
+const Membres = () => {
+    const [popupOpen, setPopupOpen] = useState(false);
+    const [selectedMember, setSelectedMember] = useState(null);
+
     const miembros = [
         { nombre: 'Laia Aleu Barnadas.', cargo: 'Investigadora en Psicologia Social', descripcion: 'Investigadora en Psicología Social, Universidad de Barcelona. Estudia gentrificación rural y sus impactos en identidad y vínculos ambientales.', imagen: 'https://img.freepik.com/foto-gratis/hombre-moreno-positiva-brazos-cruzados_1187-5797.jpg' },
         { nombre: 'Moisés Carmona Monferrer', cargo: 'Profesor Agregado, Universidad de Barcelona', descripcion: 'Doctor en Psicología Social, especializado en intervención psicosocial, comunitaria y sostenibilidad. Dirige proyectos nacionales y europeos.', imagen: 'https://img.freepik.com/foto-gratis/hombre-moreno-positiva-brazos-cruzados_1187-5797.jpg' },
@@ -13,42 +17,58 @@ function Membres() {
         { nombre: 'Andrea Latorre Reolon', cargo: 'Profesora, Universitat Oberta de Catalunya', descripcion: 'Investiga sobre migración, exclusión social, y socialización familiar. Anteriormente profesora en MIPS.', imagen: 'https://img.freepik.com/foto-gratis/hombre-moreno-positiva-brazos-cruzados_1187-5797.jpg' },
         { nombre: 'Beatriz Layunta Maurel', cargo: 'Profesora, Universidad de Barcelona', descripcion: 'Investiga en psicología social de la salud, género, y exclusión social. Apasionada de las artes performativas.', imagen: 'https://img.freepik.com/foto-gratis/hombre-moreno-positiva-brazos-cruzados_1187-5797.jpg' }
     ];
-    
 
-    const [miembroSeleccionado, setMiembroSeleccionado] = useState(miembros[0]);
+    const openPopup = (miembro) => {
+        setSelectedMember(miembro);
+        setPopupOpen(true);
+    };
 
-    const mostrarPopup = (miembro) => {
-        setMiembroSeleccionado(miembro);
-        setShowPopup(true);
+    const closePopup = () => {
+        setPopupOpen(false);
     };
 
     return (
-        <div className='Membres'>
-            <h1>MEMBRES</h1>
-            <div className="imagenes-container">
+        <div className="slide-container swiper">
+            <h1 className='tituloMembres'>Els nostres Membres</h1>
+            <Swiper
+                spaceBetween={50}
+                slidesPerView={3}
+                onSlideChange={() => console.log('slide change')}
+                onSwiper={(swiper) => console.log(swiper)}
+            >
                 {miembros.map((miembro, index) => (
-                    <div className="imagen-wrapper" key={index}>
-                        <img src={miembro.imagen} alt="Miembro" />
-                        <button className="info-boton" onClick={() => mostrarPopup(miembro)}>Más información</button>
-                    </div>
+                    <SwiperSlide key={index}>
+                        <div className="card">
+                            <div className="image-content">
+                                <span className="overlay"></span>
+                                <div className="card-image">
+                                    <img src={miembro.imagen} alt="" className="card-img" />
+                                </div>
+                            </div>
+                            <div className="card-content">
+                                <h2 className="name">{miembro.nombre}</h2>
+                                <p className="description">{miembro.descripcion}</p>
+                                <button className="button" onClick={() => openPopup(miembro)}>View More</button>
+                            </div>
+                        </div>
+                    </SwiperSlide>
                 ))}
-            </div>
-            {showPopup && (
+            </Swiper>
+
+            {popupOpen && (
                 <div className="popup">
                     <div className="popup-content">
-                        <button className="close-boton" onClick={() => setShowPopup(false)}>X</button>
-                        <div className="popup-text">
-                            <h2>{miembroSeleccionado.nombre}</h2>
-                            <h4>{miembroSeleccionado.cargo}</h4>
-                            <p>{miembroSeleccionado.descripcion}</p>
-                        </div>
+                        <button className="close-button" onClick={closePopup}>X</button>
+                        <h2 className="popup-name">{selectedMember.nombre}</h2>
+                        <p className="popup-catchphrase">Una breve frase impactante aquí.</p>
                         <div className="popup-image">
-                            <img src={miembroSeleccionado.imagen} alt="Miembro Seleccionado" />
-                            <button className="cv-boton">Enllaç Curriculum</button>
+                            <img src={selectedMember.imagen} alt="Miembro Seleccionado" />
                         </div>
+                        <button className="cv-button">Ver Curriculum</button>
                     </div>
                 </div>
             )}
+
         </div>
     );
 }

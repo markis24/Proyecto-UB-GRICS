@@ -12,14 +12,14 @@ function Header() {
             </label>
             <label className="logo">
                 <img src={LogoGRICS} alt="Logo GRICS" className="LogoGRICS" />
-                <p>Ref. AGAUR SGR2017-1500 - SGR2021-00233</p>
             </label>
             <ul>
                 <li><Link to="mainPageId" smooth={true} duration={1000}>Inici</Link></li>
-                <li><Link to="Membres" smooth={true} duration={1000}>Membres</Link></li>
+                <li><Link to="qui_som" smooth={true} duration={1000}>Nosaltres</Link></li>
+                <li><Link to="slide-container swiper" smooth={true} duration={1000}>Membres</Link></li>
                 <li><Link to="Projectes" smooth={true} duration={1000}>Projectes</Link></li>
                 <li><Link to="Publicaciones" smooth={true} duration={1000}>Publicacions</Link></li>
-                <li><Link to="info-uni" smooth={true} duration={1000}>Contactos</Link></li>
+                <li><Link to="info-uni" smooth={true} duration={1000}>Contacte</Link></li>
                 <li><button><a>Accedir</a></button></li>
             </ul>
         </nav>

@@ -4,6 +4,7 @@ import Membres from '../Miembros/Miembros';
 import Projectes from '../Proyectos/Proyectos';
 import Publicaciones from '../Publicaciones/Publicaciones';
 import Contacto from '../Contacto/Contacto';
+import Nosaltres from '../QuiSom/Nosaltres';
 import './App.css';
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
       <Header />
       <div>
         <Main_page id="main_page" />
-        <Membres id="miembros" />
+        <Nosaltres id="qui_som" />
+        <Membres id="slide-container swiper" />
         <Projectes id="proyectos" />
         <Publicaciones id="publicaciones" />
         <Contacto id="contacto" />

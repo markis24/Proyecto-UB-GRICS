@@ -1,130 +1,199 @@
-.Membres {
-    min-height: 50vh;
-    padding-top: 25px;
-    margin-top: 50px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid rgb(250, 141, 15);
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-.Membres h1 {
-    font-size: 100px;
-    margin: 75px 0 25px;
-    text-decoration: underline;
-    text-align: center;
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #beb9ff;
 }
 
-.imagenes-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+.slide-container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px;
 }
 
-.imagen-wrapper {
-    position: relative;
-    width: 300px;
-    height: 400px;
-    margin-bottom: 20px;
+.tituloMembres {
+  text-align: center;
+  font-size: 100px;
+  margin: 50px 0 45px 0;
+  width: 100%;
 }
 
-.imagen-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.card {
+  border-radius: 25px;
+  background-color: #FFF;
+  height: 400px; /* Altura fija para las tarjetas */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Espacio entre los elementos dentro de la tarjeta */
 }
 
-.info-boton {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
+.image-content, .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
 }
 
-.info-boton:hover {
-    background-color: #0056b3;
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+  flex: 0 0 auto; /* No permitir crecimiento ni encogimiento */
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #4070F4;
+  border-radius: 25px 25px 0 0;
+}
+
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #4070F4;
+}
+
+.card-content {
+  flex: 1 1 auto; /* Permitir crecimiento y encogimiento */
+  overflow: hidden; /* Ocultar cualquier contenido desbordante */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribuir el contenido verticalmente */
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin: 10px 0; /* Espacio entre el nombre y otros elementos */
+}
+
+.description {
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+  margin-bottom: 10px;
+  overflow: hidden; /* Ocultar cualquier contenido desbordante */
+  text-overflow: ellipsis; /* Añadir puntos suspensivos (...) para el texto desbordante */
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Mostrar máximo de 3 líneas */
+  -webkit-box-orient: vertical;
+}
+
+.button {
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #4070F4;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: center; /* Centrar el botón */
+  margin-top: auto; /* Empujar el botón al final del contenido */
+}
+
+.button:hover {
+  background: #265DF2;
 }
 
 .popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 
 .popup-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    width: 90%;
-    max-width: 600px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    font-size: 15px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 50%; /* Más pequeño que el original */
+  max-width: 400px; /* Ajuste del tamaño máximo */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.popup-image {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
-.popup-content img {
-    max-width: 350px;
-    margin-bottom: 20px;
+.popup-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
 }
 
-.cv-boton {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
+.popup-catchphrase {
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-.cv-boton:hover {
-    background-color: #0056b3;
+.popup-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
-.popup-text h2 {
-    color: #5755e0;
-    margin-bottom: 5px;
+.cv-button {
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #4070F4;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-.popup-text h4 {
-    margin-bottom: 5px;
-}
-
-.close-boton {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 5px 10px;
-    background-color: #ff4d4d;
-    color: white;
-    border: none;
-    border-radius: 100%;
-}
-
-.close-boton:hover {
-    background-color: #cc0000;
+.cv-button:hover {
+  background: #265DF2;
 }

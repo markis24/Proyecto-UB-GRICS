@@ -7,13 +7,12 @@
     flex-direction: column;
     justify-content: center; /* Centra el contenido verticalmente dentro del viewport */
     align-items: center; /* Centra horizontalmente en caso necesario */
-    border: 2px solid rgb(153, 51, 88);
 }
 
 
 .Projectes h1 {
     font-size: 100px;
-    margin: 20px 0 50px; /* Añade espacio debajo del título */
+    margin: 50px 0 50px; /* Añade espacio debajo del título */
     text-decoration: underline;
 }
 
@@ -45,6 +44,10 @@
     transform: translate(-50%, -50%);
     padding: 10px 20px;
     cursor: pointer;
+    background: #5755e0;
+    color: white;
+    border-radius: 6px;
+    border: none;
 }
 
 .info-boton:hover {
