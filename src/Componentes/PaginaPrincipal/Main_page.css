@@ -1,10 +1,10 @@
 #mainPageId {
     padding: 0;
-    margin-top: 10%;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 7% 5% 5% 5%;
+    border: 5px solid yellow;
 }
-
 
 #h1f,
 #h1s {
@@ -13,33 +13,34 @@
 }
 
 #h1f {
-    margin-left: 5%;
+    margin-left: 3%;
 }
 
 #h1s {
-    margin-left: 21%;
+    margin-left: 24.5%;
+    margin-bottom: 1.5%;
 }
 
 #container-page {
     display: block;
     margin: auto;
-    width: 90%;
+    width: 95%;
     background-color: #3D30A2;
-    border-radius: 10px;
+    border-radius: 25px;
     padding: 25px;
     color: white;
     height: 300px;
 }
 
 #container-page p {
-    margin-bottom: 60px;
+    margin-bottom: 45px;
     font-size: 25px;
     margin-top: 55px;
     margin-left: 5%;
 }
 
 #buttonAmarillo {
-    margin-left: 7%;
+    margin-left: 5%;
     background-color: yellow;
     padding: 15px 35px;
     border-radius: 10px;
@@ -50,7 +51,7 @@
     overflow: hidden;
     border: none;
     transition: background-color 0.3s;
-    animation: appearFromLeft 2s ease-in-out forwards, floatUpDown 5s ease-in-out infinite;
+    animation: appearFromLeft 2s ease-in-out forwards, floatUpDown 5s ease-in-out infinite, glowing-border 2s infinite;
 }
 
 #buttonAmarillo::before {
@@ -61,22 +62,21 @@
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    background: rgba(255, 0, 0, 0);
-    box-shadow: 0 0 8px 0 rgba(255, 0, 0, 0.7);
-    animation: glowing-border 1.5s infinite;
+    box-shadow: 0 0 5px 2px rgba(255, 255, 0, 0.7);
+    transition: box-shadow 0.5s;
 }
 
 @keyframes glowing-border {
     0% {
-        box-shadow: 0 0 5px 0 rgba(255, 0, 0, 0);
+        box-shadow: 0 0 5px 2px rgba(255, 255, 0, 0.7);
     }
 
     50% {
-        box-shadow: 0 0 5px 5px rgb(246, 255, 0);
+        box-shadow: 0 0 10px 5px rgba(255, 255, 0, 1);
     }
 
     100% {
-        box-shadow: 0 0 5px 0 rgba(255, 0, 0, 0);
+        box-shadow: 0 0 5px 2px rgba(255, 255, 0, 0.7);
     }
 }
 
@@ -84,12 +84,11 @@
     background-color: rgb(228, 228, 102);
 }
 
-
 #mainPageId img {
     float: right;
     z-index: 1000;
-    margin-right: 5%;
-    margin-top: -30px;
+    margin-right: 3%;
+    margin-top: 20px;
 }
 
 .text-animation {

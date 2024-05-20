@@ -1,12 +1,9 @@
-// Importación de React y hoja de estilos
 import React from 'react';
 import "./Contacto.css";
 
-// Importación del logo de GRICS
-import LogoGRICS from './LogoGRICS (1).png';  // Asegúrate de que la ruta es correcta y el archivo no tiene espacios ni caracteres especiales en su nombre
+import LogoGRICS from './LogoGRICS (1).png'; 
 import GricsFin from './GricsFin.png';
 
-// Definición del componente Footer que contiene varias secciones
 const Contacto = () => {
   return (
     <footer className='info-uni'>
@@ -25,7 +22,7 @@ const Contacto = () => {
       <div id="direccio">
         <p className="titols">Direcció</p>
         <p className="space">C\ Sancho Avila, 161</p>
-        <p>632498567</p>
+        <p>Barcelona, España</p>
       </div>
       <div id="titols">
         <p className="titols">Legal</p>
@@ -36,5 +33,4 @@ const Contacto = () => {
   );
 };
 
-// Exportación del componente
 export default Contacto;

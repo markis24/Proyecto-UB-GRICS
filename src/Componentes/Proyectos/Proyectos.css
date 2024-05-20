@@ -1,19 +1,18 @@
 .Projectes {
-    min-height: 100vh; /* Asegura que la sección tenga al menos la altura del viewport */
-    padding-top: 25px;
-    margin-top: 50px; /* Aumenta el margen superior para asegurar que no esté detrás del header */
+    min-height: 90vh;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centra el contenido verticalmente dentro del viewport */
-    align-items: center; /* Centra horizontalmente en caso necesario */
+    justify-content: center;
+    align-items: center;
+    border: 5px solid pink;
+    margin: 2% 5% 1% 5%;
 }
 
-
 .Projectes h1 {
-    font-size: 100px;
-    margin: 50px 0 50px; /* Añade espacio debajo del título */
-    text-decoration: underline;
+    font-size: 6rem;
+    margin-bottom: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .imagenes-container {
@@ -21,20 +20,27 @@
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    margin-bottom: 20px; /* Espacio adicional debajo del contenedor de imágenes */
+    margin-bottom: 20px;
 }
 
 .imagen-wrapper {
     position: relative;
-    width: 300px; /* Ancho fijo para las imágenes */
-    height: 400px; /* Altura fija para las imágenes */
-    margin-bottom: 20px; /* Espacio adicional debajo de cada imagen */
+    width: 300px;
+    height: 400px;
+    margin-bottom: 20px;
+    transition: transform 0.3s; /* Suaviza la transición de la transformación */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
+}
+
+.imagen-wrapper:hover {
+    transform: scale(1.05); /* Escala la imagen un poco al pasar el puntero */
 }
 
 .imagen-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 7%;
 }
 
 .info-boton {
@@ -51,20 +57,19 @@
 }
 
 .info-boton:hover {
-    display: block;
-    background-color:#ee7c7c;
+    background-color: #ee7c7c;
     color: aliceblue;
 }
 
 /* Ajustes responsivos */
 @media (max-width: 768px) {
     .Projectes h1 {
-        font-size: 60px; /* Reduce el tamaño del título en pantallas pequeñas */
+        font-size: 60px;
     }
 
     .imagen-wrapper {
-        width: 90%; /* Ajusta las imágenes para que sean más flexibles en tamaño */
-        max-width: 300px; /* Establece un máximo para evitar que sean demasiado grandes */
-        height: auto; /* Hace que la altura sea automática para mantener la proporción */
+        width: 90%;
+        max-width: 300px;
+        height: auto;
     }
 }

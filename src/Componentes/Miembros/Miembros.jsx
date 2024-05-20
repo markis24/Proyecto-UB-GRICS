@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import './Miembros.css';
 
+
 const Membres = () => {
     const [popupOpen, setPopupOpen] = useState(false);
     const [selectedMember, setSelectedMember] = useState(null);
@@ -28,11 +29,12 @@ const Membres = () => {
     };
 
     return (
+        
         <div className="slide-container swiper">
-            <h1 className='tituloMembres'>Els nostres Membres</h1>
+            <h1 className='tituloMembres'>Membres de GRICS</h1>
             <Swiper
-                spaceBetween={50}
-                slidesPerView={3}
+                spaceBetween={10}
+                slidesPerView={4}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
             >
@@ -48,7 +50,7 @@ const Membres = () => {
                             <div className="card-content">
                                 <h2 className="name">{miembro.nombre}</h2>
                                 <p className="description">{miembro.descripcion}</p>
-                                <button className="button" onClick={() => openPopup(miembro)}>View More</button>
+                                <button className="button" onClick={() => openPopup(miembro)}>Mes Informació</button>
                             </div>
                         </div>
                     </SwiperSlide>
@@ -68,7 +70,6 @@ const Membres = () => {
                     </div>
                 </div>
             )}
-
         </div>
     );
 }

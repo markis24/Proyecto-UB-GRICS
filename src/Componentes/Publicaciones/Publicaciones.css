@@ -5,15 +5,16 @@
 }
 
 .Publicaciones {
-    margin: 50px 5%; /* Uso de shorthand para margin para simplificar */
-    padding-top: 25px;
-    min-height: 100vh; /* Asegura que la sección tenga al menos la altura del viewport */
+    margin: 0 5% 0 5%;
+    min-height: 90vh; /* Asegura que la sección tenga al menos la altura del viewport */
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centra el contenido verticalmente dentro del viewport */
     align-items: center; /* Centra horizontalmente en caso necesario */
-
+    border: 5px solid aquamarine;
 }
+
+
 
 .Publicaciones div a {
     display: block; /* Hace que cada enlace ocupe toda la fila, mejora la clicabilidad */

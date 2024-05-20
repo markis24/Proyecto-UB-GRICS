@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -14,28 +14,50 @@ body {
 }
 
 .slide-container {
-  max-width: 1120px;
+  max-width: 1300px;
   width: 100%;
-  padding: 40px;
+  padding: 35px 0 0; 
+  border: 2px solid red;
+  text-align: center;
 }
 
 .tituloMembres {
   text-align: center;
   font-size: 100px;
-  margin: 50px 0 45px 0;
+  margin-bottom: 2%;
   width: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+.swiper {
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  flex: 1 0 auto;
+  padding: 10px; 
 }
 
 .card {
   border-radius: 25px;
   background-color: #FFF;
-  height: 400px; /* Altura fija para las tarjetas */
+  height: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Espacio entre los elementos dentro de la tarjeta */
+  justify-content: space-between;
+  transition: transform 0.3s ease;
 }
 
-.image-content, .card-content {
+.card:hover {
+  transform: scale(1.05); 
+}
+
+.image-content,
+.card-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,7 +68,7 @@ body {
   position: relative;
   row-gap: 5px;
   padding: 25px 0;
-  flex: 0 0 auto; /* No permitir crecimiento ni encogimiento */
+  flex: 0 0 auto;
 }
 
 .overlay {
@@ -77,18 +99,18 @@ body {
 }
 
 .card-content {
-  flex: 1 1 auto; /* Permitir crecimiento y encogimiento */
-  overflow: hidden; /* Ocultar cualquier contenido desbordante */
+  flex: 1 1 auto;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Distribuir el contenido verticalmente */
+  justify-content: space-between;
 }
 
 .name {
   font-size: 18px;
   font-weight: 500;
   color: #333;
-  margin: 10px 0; /* Espacio entre el nombre y otros elementos */
+  margin: 10px 0;
 }
 
 .description {
@@ -96,10 +118,10 @@ body {
   color: #707070;
   text-align: center;
   margin-bottom: 10px;
-  overflow: hidden; /* Ocultar cualquier contenido desbordante */
-  text-overflow: ellipsis; /* Añadir puntos suspensivos (...) para el texto desbordante */
+  overflow: hidden;
+  text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 3; /* Mostrar máximo de 3 líneas */
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
 
@@ -112,12 +134,12 @@ body {
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.3s ease;
-  align-self: center; /* Centrar el botón */
-  margin-top: auto; /* Empujar el botón al final del contenido */
+  align-self: center;
+  margin-top: auto;
 }
 
 .button:hover {
-  background: #265DF2;
+  background:#ee7c7c;
 }
 
 .popup {
@@ -141,8 +163,8 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
-  width: 50%; /* Más pequeño que el original */
-  max-width: 400px; /* Ajuste del tamaño máximo */
+  width: 25%;
+  max-width: 400px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -197,3 +219,4 @@ body {
 .cv-button:hover {
   background: #265DF2;
 }
+
