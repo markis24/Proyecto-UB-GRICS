@@ -1,21 +1,21 @@
-h1,
-h2,
-p {
+.titol-article-container h1,
+.titol-article-container h2,
+.titol-article-container p {
     text-align: center;
 }
 
-h1 {
+.titol-article-title {
     font-size: 100px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-h2 {
+.titol-article-subtitle {
     font-size: 50px;
     margin: 50px 0 25px;
 }
 
-p {
+.titol-article-text {
     margin: 0 15%;
     line-height: 1.6;
     font-size: 16px;
