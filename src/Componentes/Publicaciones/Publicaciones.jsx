@@ -18,7 +18,7 @@ function Publicaciones() {
         <div className='Publicaciones'>
             <h1>Publicacions</h1>
             <br />
-            <div onClick={() => goToArticle('/titol_article')}><a><b>Artículo 1 -</b> Di Masso, A., Berroeta, H., Pradillo C., &amp; Aleu, L. (2022). Gentrificación y desposesión de lugar:
+            <div onClick={() => openArticleInNewTab('/titol_article')}><a><b>Artículo 1 -</b> Di Masso, A., Berroeta, H., Pradillo C., &amp; Aleu, L. (2022). Gentrificación y desposesión de lugar:
                 Dinámicas subjetivas del desplazamiento simbólico y la gentrificación. Anuario de Psicología, 52(1),
                 97-106.</a></div>
             <br />
@@ -30,6 +30,11 @@ function Publicaciones() {
             <br />
             <div onClick={() => openArticleInNewTab('/titol_article')}><a><b>Artículo 4 -</b>Manzo, L., Williams, D., Di Masso, A., Raymond, C., &amp; Gulsrud, N. (2023). Using senses of place to
                 help communities navigate place disruption and uncertainty. Landscape Journal, 42(1), 37-52.</a></div>
+            <br />
+            <div onClick={() => openArticleInNewTab('/titol_article')}><a><b>Artículo 5 -</b> Di Masso, A., Berroeta, H., Pradillo C., &amp; Aleu, L. (2022). Gentrificación y desposesión de lugar:
+                Dinámicas subjetivas del desplazamiento simbólico y la gentrificación. Anuario de Psicología, 52(1),
+                97-106.</a></div>
+            <br />
         </div>
     );
 }

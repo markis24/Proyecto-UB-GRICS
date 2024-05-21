@@ -5,14 +5,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 5px solid pink;
-    margin: 2% 5% 1% 5%;
+    margin: 5% 5% 1% 5%;
 }
 
 .Projectes h1 {
     font-size: 6rem;
     margin-bottom: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #5755e0;
 }
 
 .imagenes-container {

@@ -16,8 +16,6 @@ body {
 .slide-container {
   max-width: 1300px;
   width: 100%;
-  padding: 35px 0 0; 
-  border: 2px solid red;
   text-align: center;
 }
 
@@ -27,6 +25,7 @@ body {
   margin-bottom: 2%;
   width: 100%;
   font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  color: #5755e0;
 }
 
 .swiper {

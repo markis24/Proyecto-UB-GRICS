@@ -20,20 +20,21 @@ function Projectes() {
             <div className="imagenes-container">
                 <div className="imagen-wrapper" onClick={() => openInNewTab('/infoprojecte')}>
                     <img src="https://media.licdn.com/dms/image/C5612AQFakuoHbuWV8Q/article-cover_image-shrink_720_1280/0/1619548985311?e=2147483647&v=beta&t=_0mYX5IOsgc5mK6YhINF72R4XbjLYJ7ZDeq-LQMFrTI" alt="Miembro" />
-                    <button className="info-boton">Más información</button>
+                    <button className="info-boton">Veure Projecte</button>
                 </div>
                 <div className="imagen-wrapper" onClick={() => openInNewTab('/infoprojecte')}>
                     <img src="https://media.licdn.com/dms/image/C5612AQFakuoHbuWV8Q/article-cover_image-shrink_720_1280/0/1619548985311?e=2147483647&v=beta&t=_0mYX5IOsgc5mK6YhINF72R4XbjLYJ7ZDeq-LQMFrTI" alt="Miembro" />
-                    <button className="info-boton">Más información</button>
+                    <button className="info-boton">Veure Projecte</button>
                 </div>
                 <div className="imagen-wrapper" onClick={() => openInNewTab('/infoprojecte')}>
                     <img src="https://media.licdn.com/dms/image/C5612AQFakuoHbuWV8Q/article-cover_image-shrink_720_1280/0/1619548985311?e=2147483647&v=beta&t=_0mYX5IOsgc5mK6YhINF72R4XbjLYJ7ZDeq-LQMFrTI" alt="Miembro" />
-                    <button className="info-boton">Más información</button>
+                    <button className="info-boton">Veure Projecte</button>
                 </div>
                 <div className="imagen-wrapper" onClick={() => openInNewTab('/infoprojecte')}>
                     <img src="https://media.licdn.com/dms/image/C5612AQFakuoHbuWV8Q/article-cover_image-shrink_720_1280/0/1619548985311?e=2147483647&v=beta&t=_0mYX5IOsgc5mK6YhINF72R4XbjLYJ7ZDeq-LQMFrTI" alt="Miembro" />
-                    <button className="info-boton">Más información</button>
+                    <button className="info-boton">Veure Projecte</button>
                 </div>
+                
             </div>
         </div>
     );

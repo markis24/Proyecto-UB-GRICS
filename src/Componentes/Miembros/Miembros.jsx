@@ -33,7 +33,7 @@ const Membres = () => {
         <div className="slide-container swiper">
             <h1 className='tituloMembres'>Membres de GRICS</h1>
             <Swiper
-                spaceBetween={10}
+                spaceBetween={15}
                 slidesPerView={4}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
