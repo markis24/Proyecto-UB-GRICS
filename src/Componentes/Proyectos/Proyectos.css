@@ -13,6 +13,7 @@
     margin-bottom: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #5755e0;
+    word-wrap: break-word; /* Permite el ajuste de línea de las palabras largas */
 }
 
 .imagenes-container {
@@ -28,12 +29,12 @@
     width: 300px;
     height: 400px;
     margin-bottom: 20px;
-    transition: transform 0.3s; /* Suaviza la transición de la transformación */
-    cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
+    transition: transform 0.3s;
+    cursor: pointer;
 }
 
 .imagen-wrapper:hover {
-    transform: scale(1.05); /* Escala la imagen un poco al pasar el puntero */
+    transform: scale(1.05);
 }
 
 .imagen-wrapper img {
@@ -62,14 +63,59 @@
 }
 
 /* Ajustes responsivos */
+@media (max-width: 1200px) {
+    .imagenes-container {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 992px) {
+    .imagenes-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .imagen-wrapper {
+        width: 45%;
+    }
+
+    .Projectes h1 {
+        font-size: 4rem; /* Ajusta el tamaño del título para pantallas más pequeñas */
+    }
+}
+
 @media (max-width: 768px) {
     .Projectes h1 {
-        font-size: 60px;
+        font-size: 3rem; /* Ajusta el tamaño del título para pantallas aún más pequeñas */
+    }
+
+    .imagenes-container {
+        flex-direction: column;
+        align-items: center;
     }
 
     .imagen-wrapper {
         width: 90%;
         max-width: 300px;
         height: auto;
+    }
+}
+
+@media (max-width: 430px) {
+    .Projectes h1 {
+        font-size: 2.5rem; /* Ajusta el tamaño del título para pantallas muy pequeñas, como el iPhone 14 Pro Max */
+        margin-bottom: 30px; /* Reduce el margen inferior para ahorrar espacio */
+    }
+
+    .imagen-wrapper {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .info-boton {
+        padding: 8px 16px; /* Ajusta el padding del botón para pantallas pequeñas */
+        font-size: 0.9rem; /* Ajusta el tamaño de la fuente del botón */
     }
 }
